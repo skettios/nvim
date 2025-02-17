@@ -1,5 +1,6 @@
 local map = vim.keymap.set
 
+-- General
 map("n", "<leader>w", "<Cmd>w<CR>")
 map("n", "<leader>q", "<Cmd>confirm q<CR>")
 map("n", "[b", "<Cmd>bprev<CR>")

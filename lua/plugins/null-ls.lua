@@ -8,7 +8,7 @@ return {
 	config = function()
 		require("mason-null-ls").setup({
 			handlers = {},
-			ensure_installed = { "stylua" },
+			ensure_installed = { "stylua", "clang-format", "prettier" },
 		})
 
 		local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
