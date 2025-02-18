@@ -13,6 +13,10 @@ map("n", "<C-l>", "<Cmd>wincmd l<CR>")
 map("n", "<leader>n", "<Cmd>enew<CR>")
 map("n", "<leader>/", "gcc", { remap = true })
 map("x", "<leader>/", "gc", { remap = true })
+map("n", "|", "<Cmd>vsplit<CR>")
+map("n", "\\", "<Cmd>split<CR>")
+map("n", "gD", vim.lsp.buf.declaration)
+map("n", "gd", vim.lsp.buf.definition)
 
 -- Telescope
 local telescope_builtin = require("telescope.builtin")
